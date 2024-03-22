@@ -6,7 +6,7 @@ class Solution {
         return res;
     }
      void subsets(int[] nums, int start, int xor) {
-        res += xor;
+        res =res+xor;
         
         for(int i = start; i < nums.length; i++) {
             subsets(nums, i+1, xor ^ nums[i]);
